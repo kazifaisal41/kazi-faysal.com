@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curator Style Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#0b0b0f;
+  color:#fff;
+}
+
+/* CONTAINER */
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:20px;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.logo{
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+.menu{
+  font-size:20px;
+}
+
+/* HERO */
+.tag{
+  font-size:11px;
+  color:#888;
+  margin-bottom:15px;
+}
+
+.title{
+  font-size:32px;
+  font-weight:800;
+  line-height:1.2;
+  margin-bottom:15px;
+}
+
+.desc{
+  color:#aaa;
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:600;
+  text-decoration:none;
+  margin-right:10px;
+}
+
+.primary{
+  background:#1a5cff;
+}
+
+.secondary{
+  border:1px solid #333;
+  color:#aaa;
+}
+
+/* HERO IMAGE */
+.hero-img{
+  margin-top:25px;
+  border-radius:8px;
+  width:100%;
+}
+
+/* SECTION */
+.section{
+  margin-top:40px;
+}
+
+.section-title{
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+/* CARD */
+.card{
+  margin-bottom:20px;
+}
+
+.card img{
+  width:100%;
+  border-radius:6px;
+}
+
+.card-title{
+  margin-top:8px;
+  font-size:13px;
+  color:#aaa;
+}
+
+/* QUOTE */
+.quote{
+  margin-top:40px;
+  padding:20px;
+  border-top:1px solid #222;
+  border-bottom:1px solid #222;
+}
+
+.quote-text{
+  font-size:16px;
+  font-weight:600;
+  line-height:1.5;
+}
+
+.quote-sub{
+  font-size:12px;
+  color:#888;
+  margin-top:10px;
+}
+
+/* CTA BOX */
+.cta-box{
+  background:#1a1a1f;
+  padding:20px;
+  border-radius:8px;
+  margin-top:40px;
+}
+
+.cta-title{
+  font-size:16px;
+  font-weight:700;
+}
+
+.cta-text{
+  font-size:13px;
+  color:#aaa;
+  margin:10px 0;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:40px;
+  font-size:12px;
+  color:#666;
+}
+
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">CURATOR</div>
+  <div class="menu">≡</div>
+</div>
+
+<!-- HERO -->
+<div class="tag">BASED IN LONDON / EST. 2024</div>
+
+<div class="title">
+CURATING<br>
+DIGITAL<br>
+ARCHETYPES
+</div>
+
+<div class="desc">
+Bridging the gap between brutalist architecture and fluid digital experiences. Craft high-end visual systems for forward-thinking brands.
+</div>
+
+<a href="#" class="btn primary">START A PROJECT</a>
+<a href="#" class="btn secondary">VIEW ARCHIVE</a>
+
+<img src="https://placehold.co/400x300" class="hero-img">
+
+<!-- ARTIFACTS -->
+<div class="section">
+  <div class="section-title">SELECTED ARTIFACTS</div>
+
+  <div class="card">
+    <img src="https://placehold.co/400x250">
+    <div class="card-title">AETHER PLATFORM ↗</div>
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/400x250">
+    <div class="card-title">CORE_DRIVE</div>
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/400x250">
+    <div class="card-title">SILENCE MAG</div>
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/400x250">
+    <div class="card-title">SYNAPSE AI</div>
+  </div>
+</div>
+
+<!-- QUOTE -->
+<div class="quote">
+  <div class="quote-text">
+  "WE DON'T BUILD FOR EVERYONE. WE BUILD FOR THOSE WHO VALUE THE SOUL IN THE MACHINE."
+  </div>
+  <div class="quote-sub">
+  The Digital Curator approach is about substance.
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-box">
+  <div class="cta-title">READY TO DEFINE THE FUTURE?</div>
+  <div class="cta-text">
+    Now accepting high-impact projects for Q3 & Q4.
+  </div>
+  <div style="font-weight:600;">HELLO@CURATOR.PRO</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>THE DIGITAL CURATOR</div>
+
+  <div class="footer-grid">
+    <div>
+      <div>PROJECTS</div>
+      <div>WORK</div>
+      <div>INFO</div>
+    </div>
+    <div>
+      <div>SOCIAL</div>
+      <div>BEHANCE</div>
+      <div>INSTAGRAM</div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px;">
+    © 2025 THE DIGITAL CURATOR
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
