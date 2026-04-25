@@ -41,6 +41,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:
 .badge-float.bottom-left{bottom:20px;left:-30px}
 .badge-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0}
 .hero-text{position:relative;z-index:2}
+.bio-row{display:flex;align-items:center;gap:1rem;margin:0.25rem 0 1rem}
+.bio-avatar{width:64px;height:64px;border-radius:999px;overflow:hidden;border:1px solid rgba(201,162,39,0.35);box-shadow:0 12px 30px rgba(0,0,0,0.35);flex:0 0 auto;background:var(--bg3)}
+.bio-avatar img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top}
+.bio-meta{min-width:0}
+.bio-name{font-weight:700;color:var(--text);line-height:1.2}
+.bio-sub{font-size:0.85rem;color:var(--muted);margin-top:0.15rem}
 .hero-eyebrow{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold);margin-bottom:1rem;font-weight:600}
 .hero-name{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,4vw,4.2rem);line-height:1.1;margin-bottom:0.5rem}
 .hero-name em{font-style:italic;color:var(--gold)}
@@ -116,6 +122,7 @@ footer p{font-size:0.8rem;color:var(--muted)}
   .contact-wrap{grid-template-columns:1fr}
   .nav-links{display:none}
   .photo-frame{width:240px;height:290px}
+  .bio-row{justify-content:center}
 }
 </style>
 </head>
@@ -168,6 +175,25 @@ footer p{font-size:0.8rem;color:var(--muted)}
 
   <div class="hero-text fade-in">
     <div class="hero-eyebrow" data-i18n="heroEyebrow">Operations · Strategy · Data</div>
+
+    <div class="bio-row">
+      <div class="bio-avatar">
+        <img
+          src="assets/bio-256.png"
+          srcset="assets/bio-256.png 256w, assets/bio-512.png 512w"
+          sizes="64px"
+          width="64"
+          height="64"
+          alt="Kazi Mohammad Faysal"
+          decoding="async"
+        />
+      </div>
+      <div class="bio-meta">
+        <div class="bio-name">Kazi Mohammad Faysal</div>
+        <div class="bio-sub" data-i18n="heroTitle">Senior Operations &amp; Business Strategy Leader</div>
+      </div>
+    </div>
+
     <h1 class="hero-name">Kazi Mohammad<br><em>Faysal</em></h1>
     <div class="hero-title" data-i18n="heroTitle">Senior Operations &amp; Business Strategy Leader</div>
     <p class="hero-desc" data-i18n="heroDesc">5+ years driving operational excellence across multinational organizations in garments, consumer electronics, and FMCG. Combining deep process expertise with data analytics to deliver measurable business outcomes.</p>
@@ -378,8 +404,3 @@ setLang('en');
 </script>
 </body>
 </html>
-git add index.html assets
-git commit -m "Update hero photo assets"
-git push
-
-
